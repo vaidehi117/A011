@@ -10,6 +10,11 @@
           crossorigin="anonymous">
     <link rel="stylesheet" href="styles/c7_main.css" />
     <link rel="stylesheet" href="styles/slicknav.css" />
+    <script type="text/Javascript">
+      $(document).ready(function(){
+        $('#nav_menu').slicknav({prependTo: "#mobile_menu"});
+      });
+    </script>
   </head>
 
   <body>
@@ -20,19 +25,21 @@
         Celebrating our <span class="shadow">75<sup>th</sup></span> Year
       </h3>
     </header>
+
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
       <ul>
         <li><a href="index.html" class="current">Home</a></li>
-        <li><a href="speakers.html">Speakers</a></li>
-        <li><a href="luncheons.html">Luncheons</a></li>
-        <li><a href="tickets.html">Tickets</a></li>
+        <li><a href="#">Speakers</a></li>
+        <li><a href="#">Luncheons</a></li>
+        <li><a href="#">Tickets</a></li>
         <li>
-          <a href="aboutus.html">About Us</a>
+          <a href="#">About Us</a>
           <ul>
-            <li>Our History</li>
-            <li>Board of Directors</li>
-            <li>Past Speakers</li>
-            <li>Contact Information</li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Board of Directors</a></li>
+            <li><a href="#">Past Speakers</a></li>
+            <li><a href="#">Contact Information</a></li>
           </ul>
         </li>
       </ul>
